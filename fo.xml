@@ -511,6 +511,27 @@
 		<KeyWord name="Container_Volume" />
 		<KeyWord name="continue" />
 		<KeyWord name="ContourColor" />
+		<KeyWord name="CountTimeEvents" func="yes">
+			<Overload retVal="uint" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+			</Overload>
+			<Overload retVal="uint" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+				<Param name="uint withValue" />
+			</Overload>
+			<Overload retVal="uint" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+				<Param name="int withValue" />
+			</Overload>
+			<Overload retVal="uint" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+				<Param name="uint[]&amp; withValues" />
+			</Overload>
+			<Overload retVal="uint" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+				<Param name="int[]&amp; withValues" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="Corner" />
 		<KeyWord name="Cost" />
 		<KeyWord name="CountEntire" func="yes">
@@ -1092,6 +1113,25 @@
 			</Overload>
 			<Overload retVal="uint" descr="Critter::">
 				<Param name="int[]&amp; identifiers" />
+			</Overload>
+			<Overload retVal="uint" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+			</Overload>
+			<Overload retVal="uint" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+				<Param name="uint withValue" />
+			</Overload>
+			<Overload retVal="uint" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+				<Param name="int withValue" />
+			</Overload>
+			<Overload retVal="uint" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+				<Param name="uint[]&amp; withValues" />
+			</Overload>
+			<Overload retVal="uint" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+				<Param name="int[]&amp; withValues" />
 			</Overload>
 		</KeyWord>
 		<KeyWord name="EventAttack" func="yes">
@@ -2390,6 +2430,16 @@
 				<Param name="void" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="GetNameTextInfo" func="yes">
+			<Overload retVal="void" descr="CritterCl::">
+				<Param name="bool&amp; nameVisible" />
+				<Param name="int&amp; x" />
+				<Param name="int&amp; y" />
+				<Param name="int&amp; w" />
+				<Param name="int&amp; h" />
+				<Param name="int&amp; lines" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="GetNearEntireCoords" func="yes">
 			<Overload retVal="bool" descr="Map::">
 				<Param name="int&amp; entire" />
@@ -2684,6 +2734,18 @@
 				<Param name="uint16&amp; milliseconds" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="GetTimeEvent" func="yes">
+			<Overload retVal="bool" descr="Server">
+				<Param name="uint num" />
+				<Param name="uint&amp; duration" />
+				<Param name="uint[]@ values" />
+			</Overload>
+			<Overload retVal="bool" descr="Server">
+				<Param name="uint num" />
+				<Param name="uint&amp; duration" />
+				<Param name="int[]@ values" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="GetTimeEvents" func="yes">
 			<Overload retVal="uint">
 				<Param name="int identifier" />
@@ -2707,6 +2769,33 @@
 				<Param name="uint num" />
 				<Param name="uint&amp; duration" />
 				<Param name="int[]@ values" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="GetTimeEventsByName" func="yes">
+			<Overload retVal="uint" descr="Server">
+				<Param name="string&amp; scriptName" />
+				<Param name="uint[]@ nums" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="GetTimeEventsByNameExt" func="yes">
+			<Overload retVal="array<uint>@" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+			</Overload>
+			<Overload retVal="array<uint>@" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+				<Param name="uint withValue" />
+			</Overload>
+			<Overload retVal="array<uint>@" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+				<Param name="int withValue" />
+			</Overload>
+			<Overload retVal="array<uint>@" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+				<Param name="uint[]&amp; withValues" />
+			</Overload>
+			<Overload retVal="array<uint>@" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+				<Param name="int[]&amp; withValues" />
 			</Overload>
 		</KeyWord>
 		<KeyWord name="GetTurnBased" func="yes">
@@ -3801,12 +3890,50 @@
 		<KeyWord name="RadioBroadcastSend" />
 		<KeyWord name="RadioChannel" />
 		<KeyWord name="RadioFlags" />
+		<KeyWord name="RadioMessage" func="yes">
+			<Overload retVal="void" descr="Server">
+				<Param name="uint16 channel" />
+				<Param name="string&amp; text" />
+			</Overload>
+			<Overload retVal="void" descr="Server">
+				<Param name="uint16 channel" />
+				<Param name="string&amp; text" />
+				<Param name="int broadcast_type" />
+				<Param name="uint from_map_id" />
+				<Param name="ushort from_wx" />
+				<Param name="ushort from_wy" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="RadioMessageMsg" func="yes">
 			<Overload retVal="void" descr="Server">
 				<Param name="uint16 channel" />
 				<Param name="uint16 textMsg" />
 				<Param name="uint strNum" />
+			</Overload>
+			<Overload retVal="void" descr="Server">
+				<Param name="uint16 channel" />
+				<Param name="uint16 textMsg" />
+				<Param name="uint strNum" />
 				<Param name="string@+ lexems" />
+			</Overload>
+			<Overload retVal="void" descr="Server">
+				<Param name="uint16 channel" />
+				<Param name="uint16 textMsg" />
+				<Param name="uint strNum" />
+				<Param name="int broadcast_type" />
+				<Param name="uint from_map_id" />
+				<Param name="uint16 from_wx" />
+				<Param name="uint16 from_wy" />
+			</Overload>
+			<Overload retVal="void" descr="Server">
+				<Param name="uint16 channel" />
+				<Param name="uint16 textMsg" />
+				<Param name="uint strNum" />
+				<Param name="string@+ lexems" />
+				<Param name="int broadcast_type" />
+				<Param name="uint from_map_id" />
+				<Param name="uint16 from_wx" />
+				<Param name="uint16 from_wy" />
 			</Overload>
 		</KeyWord>
 		<KeyWord name="RADIO_BROADCAST_FORCE_ALL" />

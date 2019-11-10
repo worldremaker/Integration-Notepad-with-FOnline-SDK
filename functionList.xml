@@ -102,6 +102,7 @@
 			<!-- ======================================================================== -->
 			<association id="FO"                      userDefinedLangName="FO" />
 			<association id="FO"                      ext=".fos" />
+			<association id="FO"                      ext=".fosp" />
 			<!-- ======================================================================== -->
 		</associationMap>
 		<parsers>
@@ -1301,7 +1302,7 @@
 			<!-- ========================================================= [ fo_mk2 ] -->
 
 			<parser
-				displayName="FOnline"
+				displayName="FO"
 				id         ="FO"
 				commentExpr="(?s:/\*.*?\*/)|(?m-s://.*?$)"
 			>
