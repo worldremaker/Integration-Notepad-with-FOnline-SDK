@@ -197,6 +197,11 @@
 				<Param name="uint8 cut" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="AFTER" func="yes">
+			<Overload retVal="int">
+				<Param name="x" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="AI_PLANE_ATTACK_PRIORY" />
 		<KeyWord name="AI_PLANE_COURIER_PRIORY" />
 		<KeyWord name="AI_PLANE_PATROL_PRIORY" />
@@ -1838,17 +1843,17 @@
 			</Overload>
 		</KeyWord>
 		<KeyWord name="GetCritters" func="yes">
-			<Overload retVal="uint">
+			<Overload retVal="uint" descr="Map::">
 				<Param name="int pid" />
 				<Param name="int findType" />
 				<Param name="Critter@[]@; critters" />
 			</Overload>
-			<Overload retVal="uint">
+			<Overload retVal="uint" descr="Client">
 				<Param name="int pid" />
 				<Param name="int findType" />
 				<Param name="CritterCl@[]@; critters" />
 			</Overload>
-			<Overload retVal="uint">
+			<Overload retVal="uint" descr="Critter::">
 				<Param name="bool lookOnMe" />
 				<Param name="int findType" />
 				<Param name="Critter@[]@ critters" />
@@ -2210,28 +2215,24 @@
 			</Overload>
 		</KeyWord>
 		<KeyWord name="GetItems" func="yes">
-			<Overload retVal="uint">
+			<Overload retVal="uint" descr="Map::">
 				<Param name="uint16 hexX" />
 				<Param name="uint16 hexY" />
 				<Param name="uint radius" />
 				<Param name="uint16 protoId" />
 				<Param name="Item@[]@ items" />
 			</Overload>
-			<Overload retVal="uint">
+			<Overload retVal="uint" descr="Critter::">
 				<Param name="int slot" />
 				<Param name="Item@[]@ items" />
 			</Overload>
-			<Overload retVal="uint">
+			<Overload retVal="uint" descr="Item::">
 				<Param name="uint specialId" />
 				<Param name="Item@[]@ items" />
 			</Overload>
-			<Overload retVal="uint">
+			<Overload retVal="uint" descr="CritterCl::">
 				<Param name="int slot" />
 				<Param name="ItemCl@[]@ items" />
-			</Overload>
-			<Overload retVal="uint">
-				<Param name="int slot" />
-				<Param name="Item@[]@ items" />
 			</Overload>
 		</KeyWord>
 		<KeyWord name="GetItemsByType" func="yes">
@@ -2798,6 +2799,16 @@
 				<Param name="int[]&amp; withValues" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="GetTimeEventsByPartValues" func="yes">
+			<Overload retVal="array<uint>@" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+				<Param name="uint[]&amp; withValues" />
+			</Overload>
+			<Overload retVal="array<uint>@" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+				<Param name="int[]&amp; withValues" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="GetTurnBased" func="yes">
 			<Overload retVal="bool">
 				<Param name="void" />
@@ -2917,6 +2928,11 @@
 		<KeyWord name="Height" />
 		<KeyWord name="HexX" />
 		<KeyWord name="HexY" />
+		<KeyWord name="HideLocationForAll" func="yes">
+			<Overload retVal="void" descr="Server (utils.fos)">
+				<Param name="Location&amp; location" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="HideScreen" func="yes">
 			<Overload retVal="void">
 				<Param name="int screen" />
@@ -4259,6 +4275,7 @@
 		<KeyWord name="SAY_ENCOUNTER_TB" />
 		<KeyWord name="SAY_FIX_RESULT" />
 		<KeyWord name="SAY_FLASH_WINDOW" />
+		<KeyWord name="SAY_NETMSG" />
 		<KeyWord name="SAY_NORM" />
 		<KeyWord name="SAY_NORM_ON_HEAD" />
 		<KeyWord name="SAY_RADIO" />
