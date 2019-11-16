@@ -522,6 +522,10 @@
 			</Overload>
 			<Overload retVal="uint" descr="Server (utils.fos)">
 				<Param name="string&amp; scriptName" />
+				<Param name="bool ignoreValues" />
+			</Overload>
+			<Overload retVal="uint" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
 				<Param name="uint withValue" />
 			</Overload>
 			<Overload retVal="uint" descr="Server (utils.fos)">
@@ -1121,6 +1125,10 @@
 			</Overload>
 			<Overload retVal="uint" descr="Server (utils.fos)">
 				<Param name="string&amp; scriptName" />
+			</Overload>
+			<Overload retVal="uint" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+				<Param name="bool ignoreValues" />
 			</Overload>
 			<Overload retVal="uint" descr="Server (utils.fos)">
 				<Param name="string&amp; scriptName" />
@@ -2781,6 +2789,10 @@
 		<KeyWord name="GetTimeEventsByNameExt" func="yes">
 			<Overload retVal="array<uint>@" descr="Server (utils.fos)">
 				<Param name="string&amp; scriptName" />
+			</Overload>	
+			<Overload retVal="uint" descr="Server (utils.fos)">
+				<Param name="string&amp; scriptName" />
+				<Param name="bool ignoreValues" />	
 			</Overload>
 			<Overload retVal="array<uint>@" descr="Server (utils.fos)">
 				<Param name="string&amp; scriptName" />
