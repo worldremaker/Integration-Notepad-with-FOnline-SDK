@@ -4801,8 +4801,10 @@
 		<KeyWord name="SKILL_TAKE_CONT" />
 		<KeyWord name="SK_BARTER" />
 		<KeyWord name="SK_BIG_GUNS" />
+		<KeyWord name="SK_CLOSE_COMBAT" />
 		<KeyWord name="SK_DOCTOR" />
 		<KeyWord name="SK_ENERGY_WEAPONS" />
+		<KeyWord name="SK_EVADING" />
 		<KeyWord name="SK_FIRST_AID" />
 		<KeyWord name="SK_GAMBLING" />
 		<KeyWord name="SK_LOCKPICK" />
