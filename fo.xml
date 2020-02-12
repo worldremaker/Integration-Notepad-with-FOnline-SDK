@@ -381,6 +381,7 @@
 		<KeyWord name="Car_Speed" />
 		<KeyWord name="Car_WalkType" />
 		<KeyWord name="Car_Wear" />
+		<KeyWord name="ceil" />
 		<KeyWord name="ChangeCrType" func="yes">
 			<Overload retVal="bool" descr="Critter::">
 				<Param name="uint newType" />
@@ -1581,6 +1582,7 @@
 		</KeyWord>
 		<KeyWord name="Flags" />
 		<KeyWord name="float" />
+		<KeyWord name="floor" />
 		<KeyWord name="FlushScreen" func="yes">
 			<Overload retVal="void">
 				<Param name="uint fromColor" />
@@ -5083,6 +5085,10 @@
 				<Param name="bool[]@+ includeSubdirs" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="TAG_SKILL1" />
+		<KeyWord name="TAG_SKILL2" />
+		<KeyWord name="TAG_SKILL3" />
+		<KeyWord name="TAG_SKILL4" />
 		<KeyWord name="TARGET_CRITTER" />
 		<KeyWord name="TARGET_ITEM" />
 		<KeyWord name="TARGET_SCENERY" />
@@ -5110,6 +5116,26 @@
 				<Param name="void" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="TRAIT_BEGIN" />
+		<KeyWord name="TRAIT_END" />
+		<KeyWord name="TRAIT_COUNT" />
+		<KeyWord name="TRAIT_FAST_METABOLISM" />
+		<KeyWord name="TRAIT_BRUISER" />
+		<KeyWord name="TRAIT_SMALL_FRAME" />
+		<KeyWord name="TRAIT_ONE_HANDER" />
+		<KeyWord name="TRAIT_FINESSE" />
+		<KeyWord name="TRAIT_KAMIKAZE" />
+		<KeyWord name="TRAIT_HEAVY_HANDED" />
+		<KeyWord name="TRAIT_FAST_SHOT" />
+		<KeyWord name="TRAIT_BLOODY_MESS" />
+		<KeyWord name="TRAIT_JINXED" />
+		<KeyWord name="TRAIT_GOOD_NATURED" />
+		<KeyWord name="TRAIT_CHEM_RELIANT" />
+		<KeyWord name="TRAIT_CHEM_RESISTANT" />
+		<KeyWord name="TRAIT_BONEHEAD" />
+		<KeyWord name="TRAIT_SKILLED" />
+		<KeyWord name="TRAIT_LONER" />
+		<KeyWord name="TRAIT_GIFTED" />
 		<KeyWord name="TRANSFER_FAR_CONT" />
 		<KeyWord name="TRANSFER_FAR_CRIT" />
 		<KeyWord name="TransitToGlobal" func="yes">
