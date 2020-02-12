@@ -5978,6 +5978,7 @@
 		<KeyWord name="__SkillModAdd6" />
 		<KeyWord name="__SneakDivider" />
 		<KeyWord name="__SplitTilesCollection" />
+		<KeyWord name="__SpritesZoom" />
 		<KeyWord name="__SpritesZoomMax" />
 		<KeyWord name="__SpritesZoomMin" />
 		<KeyWord name="__StartSpecialPoints" />
