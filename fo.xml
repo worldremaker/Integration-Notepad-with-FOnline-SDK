@@ -3815,9 +3815,29 @@
 		<KeyWord name="Pick_UseItemId" />
 		<KeyWord name="PicMap" />
 		<KeyWord name="Pid" />
+		<KeyWord name="PLANE_DISABLE_FORCEFIELD" />
 		<KeyWord name="PLANE_DISCARD" />
+		<KeyWord name="PLANE_DOCTOR_CRITTER" />
+		<KeyWord name="PLANE_GOTO_TRANSFER" />
+		<KeyWord name="PLANE_HEAL_CRITTER" />
+		<KeyWord name="PLANE_FIND_TRAPS_ON_ITEM" />
+		<KeyWord name="PLANE_FIRE_IN_THE_HOLE" />
+		<KeyWord name="PLANE_FOLLOWER_GOTO_MASTER" />
+		<KeyWord name="PLANE_GOTO_EXIT" />
 		<KeyWord name="PLANE_KEEP" />
+		<KeyWord name="PLANE_LOCKPICK_ITEM" />
+		<KeyWord name="PLANE_LOOT" />
+		<KeyWord name="PLANE_LOOT_EX" />
+		<KeyWord name="PLANE_PICK_DROPPED_WPN" />
+		<KeyWord name="PLANE_PUSH_CRITTER" />
+		<KeyWord name="PLANE_RAM_INTO_CRITTER" />
+		<KeyWord name="PLANE_REPAIR_ITEM" />
+		<KeyWord name="PLANE_REPAIR_SCENERY" />
+		<KeyWord name="PLANE_RETURN_WPN" />
 		<KeyWord name="PLANE_RUN_GLOBAL" />
+		<KeyWord name="PLANE_USE_SCIENCE_ON_ITEM" />
+		<KeyWord name="PLANE_USE_SCIENCE_ON_SCENERY" />
+		<KeyWord name="PLANE_WANDER" />
 		<KeyWord name="player_allowcommand" func="yes">
 			<Overload retVal="bool" descr="Server reserved">
 				<Param name="Critter@ cr" />
@@ -5095,6 +5115,34 @@
 		<KeyWord name="TARGET_SELF" />
 		<KeyWord name="TARGET_SELF_ITEM" />
 		<KeyWord name="Time" />
+		<KeyWord name="TIMEOUT_BEGIN" />
+		<KeyWord name="TIMEOUT_COUNT" />
+		<KeyWord name="TIMEOUT_END" />
+		<KeyWord name="TO_BEER" />
+		<KeyWord name="TO_BATTLE" />
+		<KeyWord name="TO_BUFFOUT" />
+		<KeyWord name="TO_CIGARETTES" />
+		<KeyWord name="TO_FIXBOY" />
+		<KeyWord name="TO_GATHERING" />
+		<KeyWord name="TO_GOD_MODE" />
+		<KeyWord name="TO_HEALING" />
+		<KeyWord name="TO_IMMUNITY_TIME" />
+		<KeyWord name="TO_JET" />
+		<KeyWord name="TO_KARMA_VOTING" />
+		<KeyWord name="TO_MENTATS" />
+		<KeyWord name="TO_NUKA_COLA" />
+		<KeyWord name="TO_PSYCHO" />
+		<KeyWord name="TO_RAD_X TO_RADAWAY" />
+		<KeyWord name="TO_REMOVE_FROM_GAME" />
+		<KeyWord name="TO_REPLICATION" />
+		<KeyWord name="TO_SK_DOCTOR" />
+		<KeyWord name="TO_SK_FIRST_AID" />
+		<KeyWord name="TO_SK_LOCKPICK" />
+		<KeyWord name="TO_SK_REPAIR" />
+		<KeyWord name="TO_SK_SCIENCE TO_SK_STEAL" />
+		<KeyWord name="TO_SNEAK" />
+		<KeyWord name="TO_TRANSFER" />
+		<KeyWord name="TO_WEAKENED" />
 		<KeyWord name="ToDead" func="yes">
 			<Overload retVal="void" descr="Critter::">
 				<Param name="uint anim2" />
