@@ -807,6 +807,7 @@
 				<Param name="Scenery@ targetScen" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="CrType" />
 		<KeyWord name="CrTypeAlias" />
 		<KeyWord name="CrTypeFemale" />
 		<KeyWord name="CrTypeMale" />
@@ -3815,6 +3816,18 @@
 		<KeyWord name="Pick_UseItemId" />
 		<KeyWord name="PicMap" />
 		<KeyWord name="Pid" />
+		<KeyWord name="PID_EXPLODE_EMP" />
+		<KeyWord name="PID_EXPLODE_FIRE_BIG" />
+		<KeyWord name="PID_EXPLODE_FIRE_SMALL" />
+		<KeyWord name="PID_EXPLODE_PLASMA" />
+		<KeyWord name="PID_EXPLODE_ROCKET" />
+		<KeyWord name="PID_FLYING_ELECTRICITY_BOLT" />
+		<KeyWord name="PID_FLYING_KNIFE" />
+		<KeyWord name="PID_FLYING_LASER_BLAST" />
+		<KeyWord name="PID_FLYING_PLASMA_BALL" />
+		<KeyWord name="PID_FLYING_PLASMA_BLAST" />
+		<KeyWord name="PID_FLYING_ROCKET" />
+		<KeyWord name="PID_FLYING_SPEAR" />
 		<KeyWord name="PLANE_DISABLE_FORCEFIELD" />
 		<KeyWord name="PLANE_DISCARD" />
 		<KeyWord name="PLANE_DOCTOR_CRITTER" />
@@ -4841,6 +4854,13 @@
 		<KeyWord name="SK_THROWING" />
 		<KeyWord name="SK_TRAPS" />
 		<KeyWord name="SK_UNARMED" />
+		<KeyWord name="SLOT_ARMOR" />
+		<KeyWord name="SLOT_GROUND" />
+		<KeyWord name="SLOT_HAND1" />
+		<KeyWord name="SLOT_HAND2" />
+		<KeyWord name="SLOT_HEAD" />
+		<KeyWord name="SLOT_INV" />
+		<KeyWord name="SLOT_TROPHY" />
 		<KeyWord name="sortAsc" func="yes">
 			<Overload retVal="void" descr="array::">
 				<Param name="void"/>
@@ -4993,6 +5013,7 @@
 		<KeyWord name="ST_NORMAL_ABSORB_EXT" />
 		<KeyWord name="ST_NORMAL_RESIST" />
 		<KeyWord name="ST_NORMAL_RESIST_EXT" />
+		<KeyWord name="ST_NPC_BOSS" />
 		<KeyWord name="ST_NPC_ROLE" />
 		<KeyWord name="ST_PERCEPTION" />
 		<KeyWord name="ST_PERCEPTION_EXT" />
@@ -5114,6 +5135,17 @@
 		<KeyWord name="TARGET_SCENERY" />
 		<KeyWord name="TARGET_SELF" />
 		<KeyWord name="TARGET_SELF_ITEM" />
+		
+		<KeyWord name="TEXTMSG_COMBAT" />
+		<KeyWord name="TEXTMSG_CRAFT" />
+		<KeyWord name="TEXTMSG_DLG" />
+		<KeyWord name="TEXTMSG_GAME" />
+		<KeyWord name="TEXTMSG_GM" />
+		<KeyWord name="TEXTMSG_HOLO" />
+		<KeyWord name="TEXTMSG_INTERNAL" />
+		<KeyWord name="TEXTMSG_ITEM" />
+		<KeyWord name="TEXTMSG_QUEST" />
+		<KeyWord name="TEXTMSG_TEXT" />
 		<KeyWord name="Time" />
 		<KeyWord name="TIMEOUT_BEGIN" />
 		<KeyWord name="TIMEOUT_COUNT" />
