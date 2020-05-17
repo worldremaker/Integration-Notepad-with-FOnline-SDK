@@ -48,21 +48,21 @@ and save it as CompileMapper
 ## Configure the compilator's results
 1. Press Shift + F6 combination keys to run the NppExec Console Filters window.
 2. Configure highlights for:
-`
+```
 %FILE%(%LINE%) : INFO*
-`
-`
+```
+```
 %FILE%(%LINE%) : ERROR*
-`
-`
+```
+```
 %FILE%(%LINE%) : WARNING*
-`
-`
+```
+```
 Success*
-`
-`
+```
+```
 Unable to build*
-`
+```
 ![NppExec Console Filters](https://img.fonline-aftertimes.net/closedbeta/integration_with_npp/npp06.png)
 3. And now results will be like:
 ![Success results](https://img.fonline-aftertimes.net/closedbeta/integration_with_npp/npp07.png)
