@@ -1,0 +1,76 @@
+To Add:
+NpcPlanes class
+
+CTE_ (all)
+Follower Vars
+FLAGS
+
+	DataVal Param;
+	DataRef ParamBase;
+	DataVal Stat;
+	DataRef StatBase;
+	DataVal Skill;
+	DataRef SkillBase;
+	DataVal TagSkill;
+	DataRef TagSkillBase;
+	DataVal Timeout;
+	DataRef TimeoutBase;
+	DataVal Kill;
+	DataRef KillBase;
+	DataVal Perk;
+	DataRef PerkBase;
+	DataVal Addiction;
+	DataRef AddictionBase;
+	DataVal Karma;
+	DataRef KarmaBase;
+	DataVal Damage;
+	DataRef DamageBase;
+	DataVal Mode;
+	DataRef ModeBase;
+	DataVal Trait;
+	DataRef TraitBase;
+	DataVal Profession;
+	DataRef ProfessionBase;
+	DataVal Achievement;
+	DataRef AchievementBase;
+	DataVal Reputation;
+	DataRef ReputationBase;
+	DataVal GoodEvilList;
+	DataRef GoodEvilListBase;
+	DataVal Followers;
+	DataRef FollowersBase;
+	DataVal FollowerVar;
+	DataRef FollowerVarBase;
+
+ST_NPC_BOSS dodane
+
+GetHomePos 
+
+int GetRootMapData(Map& map, uint index)
+{
+    return map.GetLocation().GetMapByIndex(0).GetData(index);
+}
+/**
+ * Stores map data for root-map within location of given map.
+ */
+void SetRootMapData(Map& map, uint index, int val)
+{
+    map.GetLocation().GetMapByIndex(0).SetData(index, val);
+}
+
+/**
+ * Retrieves map data for root-map of the location.
+ */
+int GetRootMapData(Location& loc, uint index)
+{
+    return loc.GetMapByIndex(0).GetData(index);
+}
+/**
+ * Stores map data for root-map within the location.
+ */
+void SetRootMapData(Location& loc, uint index, int val)
+{
+    loc.GetMapByIndex(0).SetData(index, val);
+}
+
+klasa file
