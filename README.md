@@ -64,8 +64,10 @@ Success*
 Unable to build*
 ```
 ![NppExec Console Filters](https://img.fonline-aftertimes.net/closedbeta/integration_with_npp/npp06.png)
+
 3. And now results will be like:
 ![Success results](https://img.fonline-aftertimes.net/closedbeta/integration_with_npp/npp07.png)
+
 or
 ![Failure results](https://img.fonline-aftertimes.net/closedbeta/integration_with_npp/npp08.png)
 
