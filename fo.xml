@@ -483,6 +483,11 @@
 		<KeyWord name="CLIENT_SCREEN_TIMER" />
 		<KeyWord name="CLIENT_SCREEN_TOWN_VIEW" />
 		<KeyWord name="CLIENT_SCREEN_USE" />
+		<KeyWord name="close" func="yes">
+			<Overload retVal="int" descr="file::">
+				<Param name="void" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="CloseDoor" func="yes">
 			<Overload retVal="bool" descr="Map::">
 				<Param name="Item@ door" />
@@ -2553,6 +2558,11 @@
 				<Param name="uint playerId" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="getPos" func="yes">
+			<Overload retVal="int" descr="file::">
+				<Param name="void" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="GetProtoItem" func="yes">
 			<Overload retVal="ProtoItem@">
 				<Param name="uint16 protoId" />
@@ -2572,6 +2582,18 @@
 			<Overload retVal="uint">
 				<Param name="array&lt;uint&gt;&amp; ids" />
 				<Param name="array&lt;string&gt;&amp; names" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="GetRootMapData" func="yes">
+			<Overload retVal="void">
+				<Param name="Location&amp; location" />
+				<Param name="uint index" />
+				<Param name="int value" />
+			</Overload>
+			<Overload retVal="void">
+				<Param name="Map&amp; map" />
+				<Param name="uint index" />
+				<Param name="int value" />
 			</Overload>
 		</KeyWord>
 		<KeyWord name="GetScenery" func="yes">
@@ -2650,6 +2672,9 @@
 		</KeyWord>
 		<KeyWord name="getSize" func="yes">
 			<Overload retVal="uint" descr="dictionary">
+				<Param name="void" />
+			</Overload>
+			<Overload retVal="int" descr="file::">
 				<Param name="void" />
 			</Overload>
 		</KeyWord>
@@ -3121,6 +3146,11 @@
 		</KeyWord>
 		<KeyWord name="isEmpty" func="yes">
 			<Overload retVal="bool" descr="array::, dictionary::">
+				<Param name="void" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isEndOfFile" func="yes">
+			<Overload retVal="bool" descr="file::">
 				<Param name="void" />
 			</Overload>
 		</KeyWord>
@@ -3706,6 +3736,11 @@
 				<Param name="uint16 toHy" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="movePos" func="yes">
+			<Overload retVal="int" descr="file::">
+				<Param name="int delta" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="MoveRandom" func="yes">
 			<Overload retVal="bool">
 				<Param name="void" />
@@ -3766,6 +3801,12 @@
 		<KeyWord name="OffsetX" />
 		<KeyWord name="OffsetY" />
 		<KeyWord name="ON_STEAL_SUCC_CONTINUE" />
+		<KeyWord name="open" func="yes">
+			<Overload retVal="int" descr="file::">
+				<Param name="const string&amp; in filename" />
+				<Param name="const string&amp; in mode" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="OpenDoor" func="yes">
 			<Overload retVal="bool">
 				<Param name="Item@ door" />
@@ -4028,9 +4069,20 @@
 				<Param name="uint8[]&amp; data" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="readLine" func="yes">
+			<Overload retVal="int" descr="file::">
+				<Param name="string&amp; out stringdata" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="readNumber" func="yes">
 			<Overload retVal="int">
 				<Param name="void" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="readString" func="yes">
+			<Overload retVal="int" descr="file::">
+				<Param name="uint length" />
+				<Param name="string&amp; out stringdata" />
 			</Overload>
 		</KeyWord>
 		<KeyWord name="readUint8" func="yes">
@@ -4700,6 +4752,11 @@
 				<Param name="string&amp; funcName" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="setPos" func="yes">
+			<Overload retVal="int" descr="file::">
+				<Param name="int pos" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="SetRain" func="yes">
 			<Overload retVal="void">
 				<Param name="uint8 capacity" />
@@ -4715,6 +4772,18 @@
 			<Overload retVal="void">
 				<Param name="uint index" />
 				<Param name="bool enabled" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="SetRootMapData" func="yes">
+			<Overload retVal="void">
+				<Param name="Location&amp; location" />
+				<Param name="uint index" />
+				<Param name="int value" />
+			</Overload>
+			<Overload retVal="void">
+				<Param name="Map&amp; map" />
+				<Param name="uint index" />
+				<Param name="int value" />
 			</Overload>
 		</KeyWord>
 		<KeyWord name="SetScript" func="yes">
@@ -5480,6 +5549,11 @@
 			<Overload retVal="bool">
 				<Param name="uint8[]&amp; data" />
 				<Param name="uint count" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="writeString" func="yes">
+			<Overload retVal="int" descr="file::">
+				<Param name="const string&amp; in stringdata" />
 			</Overload>
 		</KeyWord>
 		<KeyWord name="writeUint8" func="yes">

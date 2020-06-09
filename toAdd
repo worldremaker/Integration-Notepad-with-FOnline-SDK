@@ -46,31 +46,3 @@ ST_NPC_BOSS dodane
 
 GetHomePos 
 
-int GetRootMapData(Map& map, uint index)
-{
-    return map.GetLocation().GetMapByIndex(0).GetData(index);
-}
-/**
- * Stores map data for root-map within location of given map.
- */
-void SetRootMapData(Map& map, uint index, int val)
-{
-    map.GetLocation().GetMapByIndex(0).SetData(index, val);
-}
-
-/**
- * Retrieves map data for root-map of the location.
- */
-int GetRootMapData(Location& loc, uint index)
-{
-    return loc.GetMapByIndex(0).GetData(index);
-}
-/**
- * Stores map data for root-map within the location.
- */
-void SetRootMapData(Location& loc, uint index, int val)
-{
-    loc.GetMapByIndex(0).SetData(index, val);
-}
-
-klasa file
