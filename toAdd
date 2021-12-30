@@ -1,9 +1,9 @@
 To Add:
-NpcPlanes class
+NpcPlanes class OK
 
-CTE_ (all)
-Follower Vars
-FLAGS
+CTE_ (all) OK
+Follower Vars OK
+FLAGS OK (MODE_EXT_*)
 
 	DataVal Param;
 	DataRef ParamBase;
@@ -41,8 +41,15 @@ FLAGS
 	DataRef FollowersBase;
 	DataVal FollowerVar;
 	DataRef FollowerVarBase;
+	
+	ALL ADDED
 
 ST_NPC_BOSS dodane
 
-GetHomePos 
+GetHomePos OK
 
+Critter::Name OK
+
+RunServerScriptUnsafe OK
+
+instrukcje array insertLast etc ALL ADDED

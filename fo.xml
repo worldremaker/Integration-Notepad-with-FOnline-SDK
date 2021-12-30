@@ -36,6 +36,8 @@
 		<KeyWord name="ACCESS_CLIENT" />
 		<KeyWord name="ACCESS_MODER" />
 		<KeyWord name="ACCESS_TESTER" />
+		<KeyWord name="Achievement" />
+		<KeyWord name="AchievementBase" />
 		<KeyWord name="Action" func="yes">
 			<Overload retVal="void" descr="Critter::">
 				<Param name="int action" />
@@ -109,6 +111,8 @@
 				<Param name="uint holodiskNum" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="Addiction" />
+		<KeyWord name="AddictionBase" />
 		<KeyWord name="AddItem" func="yes">
 			<Overload retVal="Item@" descr="Critter::, Item:: (containers), Map::">
 				<Param name="uint16 protoId" />
@@ -368,6 +372,7 @@
 				<Param name="Item@ item" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="CAR_BIO_ENGINE" />
 		<KeyWord name="Car_CrittersCapacity" />
 		<KeyWord name="Car_DeteriorationRate" />
 		<KeyWord name="Car_Entrance" />
@@ -376,6 +381,7 @@
 		<KeyWord name="Car_MaxDeterioration" />
 		<KeyWord name="Car_MovementType" />
 		<KeyWord name="Car_Negotiability" />
+		<KeyWord name="CAR_NO_LOCKPICK" />
 		<KeyWord name="Car_Passability" />
 		<KeyWord name="Car_RunToBreak" />
 		<KeyWord name="Car_Speed" />
@@ -816,6 +822,23 @@
 		<KeyWord name="CrTypeAlias" />
 		<KeyWord name="CrTypeFemale" />
 		<KeyWord name="CrTypeMale" />
+		<KeyWord name="CTE_AGE" />
+		<KeyWord name="CTE_AUTOKILL" />
+		<KeyWord name="CTE_BURN" />
+		<KeyWord name="CTE_CHEAT_AURA" />
+		<KeyWord name="CTE_CUTSCENE" />
+		<KeyWord name="CTE_DELETE" />
+		<KeyWord name="CTE_FOLLOWER_CHECK_LOYALITY_ITEM" />
+		<KeyWord name="CTE_FOLLOWER_JOIN" />
+		<KeyWord name="CTE_FOLLOWER_LOYALITY" />
+		<KeyWord name="CTE_MOB_LOOK_FOR_ENEMY" />
+		<KeyWord name="CTE_OBSERVING" />
+		<KeyWord name="CTE_POISON" />
+		<KeyWord name="CTE_RADIATION" />
+		<KeyWord name="CTE_SCHEDULE" />
+		<KeyWord name="CTE_TAKE_ALL" />
+		<KeyWord name="CTE_TRADER" />
+		<KeyWord name="CTE_UNSET_MULTILOG_PASSED_FLAG" />
 		<KeyWord name="CURSOR_DEFAULT" />
 		<KeyWord name="CURSOR_HAND" />
 		<KeyWord name="CURSOR_MOVE" />
@@ -823,6 +846,8 @@
 		<KeyWord name="CURSOR_USE_SKILL" />
 		<KeyWord name="CURSOR_USE_WEAPON" />
 		<KeyWord name="CURSOR_WAIT" />
+		<KeyWord name="Damage" />
+		<KeyWord name="DamageBase" />
 		<KeyWord name="DAMAGE_ELECTR" />
 		<KeyWord name="DAMAGE_EMP" />
 		<KeyWord name="DAMAGE_EXPLODE" />
@@ -1565,6 +1590,11 @@
 				<Param name="uint length" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="first" func="yes">
+			<Overload retVal="template&amp;" descr="array::">
+				<Param name="void" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="FIXBOY_ADD_CRAFT_ITEMS" />
 		<KeyWord name="FIXBOY_ADD_EXPERIENCE" />
 		<KeyWord name="FIXBOY_ALLOW_CRAFT" />
@@ -1600,6 +1630,10 @@
 		<KeyWord name="FOG_NONE" />
 		<KeyWord name="FOG_SELF" />
 		<KeyWord name="FOG_SELF2" />
+		<KeyWord name="Followers" />
+		<KeyWord name="FollowersBase" />
+		<KeyWord name="FollowerVar" />
+		<KeyWord name="FollowerVarBase" />
 		<KeyWord name="FOMB_COMBAT_RESULT" />
 		<KeyWord name="FOMB_GAME" />
 		<KeyWord name="FOMB_TALK" />
@@ -1624,6 +1658,28 @@
 				<Param name="int&amp; offsY" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="FV_ATTACK_POLICY" />
+		<KeyWord name="FV_BEGIN FV_CLAIMABLE" />
+		<KeyWord name="FV_DEFAULT_ARMOR" />
+		<KeyWord name="FV_DRUG_USES_STATE" />
+		<KeyWord name="FV_DISTANCE" />
+		<KeyWord name="FV_END" />
+		<KeyWord name="FV_FACTION" />
+		<KeyWord name="FV_FLAGS" />
+		<KeyWord name="FV_FLAG_FLED_BATTLE" />
+		<KeyWord name="FV_FLAG_MASTER_SPEAKER" />
+		<KeyWord name="FV_LAST_DIALOG_ID" />
+		<KeyWord name="FV_LOYALITY" />
+		<KeyWord name="FV_MASTER" />
+		<KeyWord name="FV_MERCID" />
+		<KeyWord name="FV_MODE" />
+		<KeyWord name="FV_RESPAWN_BASE_ID" />
+		<KeyWord name="FV_RESPAWN_PLACE" />
+		<KeyWord name="FV_SPAWNMAP" />
+		<KeyWord name="FV_TYPE" />
+		<KeyWord name="FV_WM_IDLE" />
+		<KeyWord name="FV_WM_NEXT_TRY" />
+		<KeyWord name="FV_WORN_ARMOR" />
 		<KeyWord name="GENDER_FEMALE" />
 		<KeyWord name="GENDER_MALE" />
 		<KeyWord name="Get" func="yes">
@@ -2180,6 +2236,14 @@
 				<Param name="uint16 hy" />
 				<Param name="int&amp; x" />
 				<Param name="int&amp; y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="GetHomePos" func="yes">
+			<Overload retVal="void" descr="Critter::">
+				<Param name="uint&amp; mapId" />
+				<Param name="uint16&amp; hexX" />
+				<Param name="uint16&amp; hexY" />
+				<Param name="uint8&amp; dir" />
 			</Overload>
 		</KeyWord>
 		<KeyWord name="GetIfaceIniStr" func="yes">
@@ -2914,6 +2978,11 @@
 				<Param name="uint[]&amp; data" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="get_length" func="yes">
+			<Overload retVal="uint" descr="array::">
+				<Param name="void" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="get_start_time" func="yes">
 			<Overload retVal="void">
 				<Param name="uint8&amp; multiplier" />
@@ -2957,6 +3026,13 @@
 		<KeyWord name="GM_WALK_WATER" />
 		<KeyWord name="Grid_Type" />
 		<KeyWord name="GroundLevel" />
+		<KeyWord name="GoodEvilList" />
+		<KeyWord name="GoodEvilListBase" />
+		<KeyWord name="grow" func="yes">
+			<Overload retVal="void" descr="array::">
+				<Param name="uint" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="GrowBuffer" func="yes">
 			<Overload retVal="void">
 				<Param name="void" />
@@ -3010,6 +3086,22 @@
 			</Overload>
 		</KeyWord>
 		<KeyWord name="inout" />
+		<KeyWord name="insertAt" func="yes">
+			<Overload retVal="void" descr="array::">
+				<Param name="uint" />
+				<Param name="arraytemplate[]&amp;" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="insertFirst" func="yes">
+			<Overload retVal="" descr="array::">
+				<Param name="arraytemplate[]&amp;" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="insertLast" func="yes">
+			<Overload retVal="void" descr="array::">
+				<Param name="arraytemplate[]&amp;" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="int" />
 		<KeyWord name="int16" />
 		<KeyWord name="int32" />
@@ -3433,6 +3525,8 @@
 		<KeyWord name="ITEM_TYPE_WEAPON" />
 		<KeyWord name="ITEM_TWO_HANDS" />
 		<KeyWord name="ITEM_WALL_TRANS_END" />
+		<KeyWord name="Karma" />
+		<KeyWord name="KarmaBase" />
 		<KeyWord name="KeyboardPress" func="yes">
 			<Overload retVal="void" descr="Client, Mapper">
 				<Param name="uint8 key1" />
@@ -3456,6 +3550,13 @@
 			<Overload retVal="bool">
 				<Param name="uint8 key" />
 				<Param name="string&amp; keyText" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Kill" />
+		<KeyWord name="KillBase" />
+		<KeyWord name="last" func="yes">
+			<Overload retVal="template&amp;" descr="array::">
+				<Param name="void" />
 			</Overload>
 		</KeyWord>
 		<KeyWord name="LeaveGlobalGroup" func="yes">
@@ -3620,11 +3721,31 @@
 		<KeyWord name="Misc_ScriptId" />
 		<KeyWord name="Misc_WaitSecond" />
 		<KeyWord name="Mode" />
+		<KeyWord name="ModeBase" />
 		<KeyWord name="MODE_BARTER_ONLY_CASH" />
 		<KeyWord name="MODE_DEAD_AGES" />
 		<KeyWord name="MODE_DEFAULT_COMBAT" />
 		<KeyWord name="MODE_DLG_SCRIPT_BARTER" />
 		<KeyWord name="MODE_END_COMBAT" />
+		<KeyWord name="MODE_EXT_EVENT" />
+		<KeyWord name="MODE_EXT_FOLLOWER" />
+		<KeyWord name="MODE_EXT_GUARD" />
+		<KeyWord name="MODE_EXT_MOB" />
+		<KeyWord name="MODE_EXT_LOOK_ADMIN" />
+		<KeyWord name="MODE_EXT_LOOK_ALWAYS_VISIBLE" />
+		<KeyWord name="MODE_EXT_LOOK_INVISIBLE" />
+		<KeyWord name="MODE_EXT_MILITIA" />
+		<KeyWord name="MODE_EXT_NO_ATTACK_AUTH" />
+		<KeyWord name="MODE_EXT_NO_DETERIORATION" />
+		<KeyWord name="MODE_EXT_NO_HIT_ANIM" />
+		<KeyWord name="MODE_EXT_NO_SLAVE" />
+		<KeyWord name="MODE_EXT_NO_WALL_CHECK" />
+		<KeyWord name="MODE_EXT_PEN_BRAHMIN" />
+		<KeyWord name="MODE_EXT_TRADER" />
+		<KeyWord name="MODE_EXT_SLAVE" />
+		<KeyWord name="MODE_EXT_SLAVE_HOSTILE" />
+		<KeyWord name="MODE_EXT_SLAVE_NORMAL" />
+		<KeyWord name="MODE_EXT_TC_LEADER" />
 		<KeyWord name="MODE_GECK" />
 		<KeyWord name="MODE_HIDE" />
 		<KeyWord name="MODE_INVULNERABLE" />
@@ -3760,6 +3881,7 @@
 		</KeyWord>
 		<KeyWord name="MyParam" />
 		<KeyWord name="MyParamBase" />
+		<KeyWord name="Name" />
 		<KeyWord name="NameColor" />
 		<KeyWord name="NameOnHead" />
 		<KeyWord name="NoLogOut" />
@@ -3801,6 +3923,11 @@
 		<KeyWord name="OffsetX" />
 		<KeyWord name="OffsetY" />
 		<KeyWord name="ON_STEAL_SUCC_CONTINUE" />
+		<KeyWord name="opAssign" func="yes">
+			<Overload retVal="arraytemplate[]&amp;" descr="array::">
+				<Param name="const arraytemplate[]&amp; in" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="open" func="yes">
 			<Overload retVal="int" descr="file::">
 				<Param name="const string&amp; in filename" />
@@ -3810,6 +3937,24 @@
 		<KeyWord name="OpenDoor" func="yes">
 			<Overload retVal="bool">
 				<Param name="Item@ door" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="opEquals" func="yes">
+			<Overload retVal="bool" descr="array::">
+				<Param name="const arraytemplate[]&amp; in" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="operator" func="yes">
+			<Overload retVal="template&amp[];" descr="array::">
+				<Param name="uint" />
+			</Overload>
+			<Overload retVal="arraytemplate[]&amp;" descr="array::">
+				<Param name="const arraytemplate[]&amp; in" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="opIndex" func="yes">
+			<Overload retVal="template&amp;" descr="array::">
+				<Param name="uint" />
 			</Overload>
 		</KeyWord>
 		<KeyWord name="or" />
@@ -3825,6 +3970,8 @@
 		<KeyWord name="ParamBase" />
 		<KeyWord name="ParentChildIndex" />
 		<KeyWord name="ParentUID" />
+		<KeyWord name="Perk" />
+		<KeyWord name="PerkBase" />
 		<KeyWord name="PE_DEAD_AGES_MODE" />
 		<KeyWord name="PE_DLG_SCRIPT_BARTER_MODE" />
 		<KeyWord name="PE_GECK_MODE" />
@@ -3975,6 +4122,9 @@
 		<KeyWord name="POW2" />
 		<KeyWord name="POW3" />
 		<KeyWord name="Priory" />
+		<KeyWord name="Priority" />
+		<KeyWord name="Profession" />
+		<KeyWord name="ProfessionBase" />
 		<KeyWord name="Proto" />
 		<KeyWord name="ProtoId" />
 		<KeyWord name="ProtoItem" />
@@ -4171,6 +4321,11 @@
 		<KeyWord name="REASON_TARGET_DISAPPEARED" />
 		<KeyWord name="REASON_TRACE_FAIL" />
 		<KeyWord name="REASON_USE_ITEM_NOT_FOUND" />
+		<KeyWord name="reduce" func="yes">
+			<Overload retVal="void" descr="array::">
+				<Param name="uint" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="Refresh" func="yes">
 			<Overload retVal="void">
 				<Param name="void" />
@@ -4226,6 +4381,21 @@
 				<Param name="int i" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="removeAt" func="yes">
+			<Overload retVal="void" descr="array::">
+				<Param name="uint" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="removeFirst" func="yes">
+			<Overload retVal="void" descr="array::">
+				<Param name="void" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="removeLast" func="yes">
+			<Overload retVal="" descr="array::">
+				<Param name="void" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="reserve" func="yes">
 			<Overload retVal="void" descr="array::">
 				<Param name="uint" />
@@ -4257,6 +4427,8 @@
 				<Param name="uint8 value" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="Reputation" />
+		<KeyWord name="ReputationBase" />
 		<KeyWord name="return" />
 		<KeyWord name="reverse" func="yes">
 			<Overload retVal="void" descr="array::">
@@ -4314,6 +4486,16 @@
 			</Overload>
 		</KeyWord>
 		<KeyWord name="RunServerScript" func="yes">
+			<Overload retVal="void">
+				<Param name="string&amp; funcName" />
+				<Param name="int p0" />
+				<Param name="int p1" />
+				<Param name="int p2" />
+				<Param name="string@ p3" />
+				<Param name="int[]@ p4" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="RunServerScriptUnsafe" func="yes">
 			<Overload retVal="void">
 				<Param name="string&amp; funcName" />
 				<Param name="int p0" />
@@ -4876,6 +5058,11 @@
 				<Param name="bool visible" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="set_length" func="yes">
+			<Overload retVal="void" descr="array::">
+				<Param name="uint" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="ShowContainer" func="yes">
 			<Overload retVal="void">
 				<Param name="Critter targetCr" />
@@ -4897,6 +5084,8 @@
 			</Overload>
 		</KeyWord>
 		<KeyWord name="Size" />
+		<KeyWord name="Skill" />
+		<KeyWord name="SkillBase" />
 		<KeyWord name="SKILL_LOOT_CRITTER" />
 		<KeyWord name="SKILL_PICK_ON_GROUND" />
 		<KeyWord name="SKILL_PUSH_CRITTER" />
@@ -4980,6 +5169,8 @@
 		<KeyWord name="StartValue_7" />
 		<KeyWord name="StartValue_8" />
 		<KeyWord name="StartValue_9" />
+		<KeyWord name="Stat" />
+		<KeyWord name="StatBase" />
 		<KeyWord name="State" />
 		<KeyWord name="string" />
 		<KeyWord name="strlwr" func="yes">
@@ -5195,6 +5386,8 @@
 				<Param name="bool[]@+ includeSubdirs" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="TagSkill" />
+		<KeyWord name="TagSkillBase" />
 		<KeyWord name="TAG_SKILL1" />
 		<KeyWord name="TAG_SKILL2" />
 		<KeyWord name="TAG_SKILL3" />
@@ -5216,6 +5409,8 @@
 		<KeyWord name="TEXTMSG_QUEST" />
 		<KeyWord name="TEXTMSG_TEXT" />
 		<KeyWord name="Time" />
+		<KeyWord name="Timeout" />
+		<KeyWord name="TimeoutBase" />
 		<KeyWord name="TIMEOUT_BEGIN" />
 		<KeyWord name="TIMEOUT_COUNT" />
 		<KeyWord name="TIMEOUT_END" />
@@ -5265,6 +5460,8 @@
 				<Param name="void" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="Trait" />
+		<KeyWord name="TraitBase" />
 		<KeyWord name="TRAIT_BEGIN" />
 		<KeyWord name="TRAIT_END" />
 		<KeyWord name="TRAIT_COUNT" />
