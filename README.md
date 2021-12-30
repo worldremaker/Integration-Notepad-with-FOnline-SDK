@@ -1,4 +1,4 @@
-# Integration-Notepad-with-FOnline-SDK
+# Integration Notepad with FOnline: Aftertimes SDK
 
 ### Important!
 From 3rd revision it's related to FOnline: Aftertimes S3 only!
@@ -9,11 +9,11 @@ From 3rd revision it's related to FOnline: Aftertimes S3 only!
 3. Download and unpack to `C:\Program Files\Notepad++\` with all subdirectories this package: http://files.fonline-aftertimes.net/tools/PluginManager_v1.4.9_x64.zip
 
 ## Code marks
-1. Unpack `fo.xml` file to `C:\Program Files\Notepad++\plugins\APIs\` directory.
+1. Unpack `foat.xml` file to `C:\Program Files\Notepad++\autoCompletion\` directory.
 2. Unpack `userDefineLang.xml` file to `C:\Documents and Settings\<UserName>\Application Data\Notepad++` (for Windows XP) or `C:\Users\<UserName>\AppData\Roaming\Notepad++` (for Windows Vista or Windows 7).
 
 ## Running
-1. Open any `*.fos` file by doubleclick.
+1. Open any `*.fos` or `*.fosp` file by doubleclick.
 2. In "Open with..." table select `Notepad++.exe` (from `C:\Program Files\Notepad++\`)
 3. You should see similar window:
 ![Coloured lines](https://img.fonline-aftertimes.net/closedbeta/integration_with_npp/npp01.png)
@@ -75,5 +75,5 @@ or
 1. Unpack functionList.xml file to `C:\Users\<UserName>\AppData\Roaming\Notepad++\` and overwrite (or if you have it customized then merge with) existing one.
 Note: My file is already merged with original one from Notepad++ package. If you don't have it customized for your preferences then you don't have to worry about it and just overwrite existing one.
 2. Select from menu View -> Function List
-3. When you'll open some `*.fos` file then you'll see.
+3. When you'll open some `*.fos` or `*.fosp` file then you'll see.
 ![Function list](https://img.fonline-aftertimes.net/closedbeta/integration_with_npp/npp09.png)

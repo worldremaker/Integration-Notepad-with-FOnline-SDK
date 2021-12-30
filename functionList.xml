@@ -107,9 +107,9 @@
 			<association id=    "universe_basic"      userDefinedLangName="UniVerse BASIC" />
 			<association id=    "universe_basic"      ext=".bas"                           />
 			<!-- ======================================================================== -->
-			<association id="FO"                      userDefinedLangName="FO" />
-			<association id="FO"                      ext=".fos" />
-			<association id="FO"                      ext=".fosp" />
+			<association id="FOAT"                      userDefinedLangName="FOAT" />
+			<association id="FOAT"                      ext=".fos" />
+			<association id="FOAT"                      ext=".fosp" />
 			<!-- ======================================================================== -->
 		</associationMap>
 		<parsers>
@@ -1544,8 +1544,8 @@
 			<!-- ========================================================= [ fo_mk2 ] -->
 
 			<parser
-				displayName="FO"
-				id         ="FO"
+				displayName="FOAT"
+				id         ="FOAT"
 				commentExpr="(?s:/\*.*?\*/)|(?m-s://.*?$)"
 			>
 				<classRange

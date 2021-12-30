@@ -5,7 +5,7 @@
  language doesnt really mean anything, its more of a comment 
 -->
 
-	<AutoComplete language="FO">
+	<AutoComplete language="FOAT">
 
 <!--
 
@@ -2879,36 +2879,36 @@
 			</Overload>
 		</KeyWord>
 		<KeyWord name="GetTimeEventsByNameExt" func="yes">
-			<Overload retVal="array<uint>@" descr="Server (utils.fos)">
+			<Overload retVal="uint[]@" descr="Server (utils.fos)">
 				<Param name="string&amp; scriptName" />
 			</Overload>	
 			<Overload retVal="uint" descr="Server (utils.fos)">
 				<Param name="string&amp; scriptName" />
 				<Param name="bool ignoreValues" />	
 			</Overload>
-			<Overload retVal="array<uint>@" descr="Server (utils.fos)">
+			<Overload retVal="uint[]@" descr="Server (utils.fos)">
 				<Param name="string&amp; scriptName" />
 				<Param name="uint withValue" />
 			</Overload>
-			<Overload retVal="array<uint>@" descr="Server (utils.fos)">
+			<Overload retVal="uint[]@" descr="Server (utils.fos)">
 				<Param name="string&amp; scriptName" />
 				<Param name="int withValue" />
 			</Overload>
-			<Overload retVal="array<uint>@" descr="Server (utils.fos)">
+			<Overload retVal="uint[]@" descr="Server (utils.fos)">
 				<Param name="string&amp; scriptName" />
 				<Param name="uint[]&amp; withValues" />
 			</Overload>
-			<Overload retVal="array<uint>@" descr="Server (utils.fos)">
+			<Overload retVal="uint[]@" descr="Server (utils.fos)">
 				<Param name="string&amp; scriptName" />
 				<Param name="int[]&amp; withValues" />
 			</Overload>
 		</KeyWord>
 		<KeyWord name="GetTimeEventsByPartValues" func="yes">
-			<Overload retVal="array<uint>@" descr="Server (utils.fos)">
+			<Overload retVal="uint[]@" descr="Server (utils.fos)">
 				<Param name="string&amp; scriptName" />
 				<Param name="uint[]&amp; withValues" />
 			</Overload>
-			<Overload retVal="array<uint>@" descr="Server (utils.fos)">
+			<Overload retVal="uint[]@" descr="Server (utils.fos)">
 				<Param name="string&amp; scriptName" />
 				<Param name="int[]&amp; withValues" />
 			</Overload>
@@ -3945,7 +3945,7 @@
 			</Overload>
 		</KeyWord>
 		<KeyWord name="operator" func="yes">
-			<Overload retVal="template&amp[];" descr="array::">
+			<Overload retVal="template&amp;[]" descr="array::">
 				<Param name="uint" />
 			</Overload>
 			<Overload retVal="arraytemplate[]&amp;" descr="array::">
