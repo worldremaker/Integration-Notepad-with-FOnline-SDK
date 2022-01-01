@@ -1,7 +1,8 @@
-# Integration Notepad with FOnline: Aftertimes SDK
+# Integration Notepad with FOnline: Aftertimes S3 and FOnline: Reloaded S4 SDKs
 
 ### Important!
 From 3rd revision it's related to FOnline: Aftertimes S3 only!
+From 24th revision it's also related to FOnline: Reloaded S4 (WIP)!
 
 ## Preparing
 1. Download and install the latest Notepad++ release from here: https://notepad-plus-plus.org/
@@ -9,7 +10,7 @@ From 3rd revision it's related to FOnline: Aftertimes S3 only!
 3. Download and unpack to `C:\Program Files\Notepad++\` with all subdirectories this package: http://files.fonline-aftertimes.net/tools/PluginManager_v1.4.9_x64.zip
 
 ## Code marks
-1. Unpack `foat.xml` file to `C:\Program Files\Notepad++\autoCompletion\` directory.
+1. Unpack `foat.xml` and `forld.xml` files to `C:\Program Files\Notepad++\autoCompletion\` directory.
 2. Unpack `userDefineLang.xml` file to `C:\Documents and Settings\<UserName>\Application Data\Notepad++` (for Windows XP) or `C:\Users\<UserName>\AppData\Roaming\Notepad++` (for Windows Vista or Windows 7).
 
 ## Running
@@ -17,8 +18,12 @@ From 3rd revision it's related to FOnline: Aftertimes S3 only!
 2. In "Open with..." table select `Notepad++.exe` (from `C:\Program Files\Notepad++\`)
 3. You should see similar window:
 ![Coloured lines](https://img.fonline-aftertimes.net/closedbeta/integration_with_npp/npp01.png)
+4. Choose your User Defined Language from here:
+![Coloured lines](https://img.fonline-aftertimes.net/closedbeta/integration_with_npp/npp01a.png)
 
 ## Compilator
+Here you have two different compilators for two different SDKs. You can't use Reloaded's compilator as replacement for Aftertimes and vice-versa but you always can configure them both, f.ex. by placing these in two different directories.
+
 1. Unpack ASCompiler.exe file to any place on your hard disk drive (f.ex. `D:\ASCompiler\`)
 2. Run Notepad++, go to menu Plugins -> Plugin Manager -> Show Plugin Manager, find and install NppExec plugin.
 ![Plugin Manager](https://img.fonline-aftertimes.net/closedbeta/integration_with_npp/npp02.png)

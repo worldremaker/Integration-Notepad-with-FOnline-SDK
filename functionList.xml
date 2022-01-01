@@ -111,6 +111,11 @@
 			<association id="FOAT"                      ext=".fos" />
 			<association id="FOAT"                      ext=".fosp" />
 			<!-- ======================================================================== -->
+			<!-- ======================================================================== -->
+			<association id="FORLD"                      userDefinedLangName="FORLD" />
+			<association id="FORLD"                      ext=".fos" />
+			<association id="FORLD"                      ext=".fosp" />
+			<!-- ======================================================================== -->
 		</associationMap>
 		<parsers>
 
@@ -1541,11 +1546,50 @@
 				</function>
 			</parser>
 			
-			<!-- ========================================================= [ fo_mk2 ] -->
+			<!-- ========================================================= [ fo_aftertimes ] -->
 
 			<parser
 				displayName="FOAT"
 				id         ="FOAT"
+				commentExpr="(?s:/\*.*?\*/)|(?m-s://.*?$)"
+			>
+				<classRange
+					mainExpr    ="^[\t\x20]*((shared)\s+)?(\w+\s*)?(class|namespace|enum|interface)[\t\x20]+[^\{]+\{"
+					openSymbole ="\{"
+					closeSymbole="\}"
+				>
+					<className>
+						<nameExpr expr="(class)[\t\x20]+\w+" />
+						<nameExpr expr="[\t\x20]+\w+" />
+						<nameExpr expr="\w+" />
+					</className>
+					<function
+						mainExpr="^[\t\x20]*((const|shared)\s+)?(\w+(\s+\w+)?(\s+|(\*|\*\*|&amp;)\s+|\s+(\*|\*\*|&amp;)|\s+(\*|\*\*|&amp;)\s+))?(\w+\s*::)?(?!(if|while|for|switch))[\w~]+\s*\([^\)\(]*\)(\s*const\s*)?(\s*(final|override|final\s*override|override\s*final)\s*)?[\n\s]*\{"
+					>
+						<functionName>
+							<funcNameExpr expr="(?!(if|while|for|switch))[\w~]+\s*\(" />
+							<funcNameExpr expr="(?!(if|while|for|switch))[\w~]+" />
+						</functionName>
+					</function>
+				</classRange>
+				<function
+					mainExpr="^[\t\x20]*((const|shared)\s+)?\w+(\s+\w+)?(\s+|(\*|\*\*|&amp;)\s+|\s+(\*|\*\*|&amp;)|\s+(\*|\*\*|&amp;)\s+)(\w+\s*::)?(?!(if|while|for))\w+\s*\([^\)\(]*\)(\s*const\s*)?[\n\s]*\{"
+				>
+					<functionName>
+						<nameExpr expr="(?!(if|while|for))\w+\s*\(" />
+						<nameExpr expr="(?!(if|while|for))\w+" />
+					</functionName>
+					<className>
+						<nameExpr expr="\w+(?=\s*::)" />
+					</className>
+				</function>
+			</parser>
+			
+			<!-- ========================================================= [ fo_reloaded ] -->
+
+			<parser
+				displayName="FORLD"
+				id         ="FORLD"
 				commentExpr="(?s:/\*.*?\*/)|(?m-s://.*?$)"
 			>
 				<classRange
