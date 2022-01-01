@@ -19,7 +19,7 @@ From 24th revision it's also related to FOnline: Reloaded S4 (WIP)!
 3. You should see similar window:
 ![Coloured lines](https://img.fonline-aftertimes.net/closedbeta/integration_with_npp/npp01.png)
 4. Choose your User Defined Language from here:
-![Coloured lines](https://img.fonline-aftertimes.net/closedbeta/integration_with_npp/npp01a.png)
+![UDL Chosing](https://img.fonline-aftertimes.net/closedbeta/integration_with_npp/npp01a.png)
 
 ## Compilator
 Here you have two different compilators for two different SDKs. You can't use Reloaded's compilator as replacement for Aftertimes and vice-versa but you always can configure them both, f.ex. by placing these in two different directories.
